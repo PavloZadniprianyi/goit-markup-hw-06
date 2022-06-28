@@ -560,6 +560,8 @@ img {
   display: flex;
   flex-direction: column;
 
+  margin-right: 93px;
+
   color: var(--third-text-color);
 }
 
@@ -656,13 +658,35 @@ img {
 }
 
 /* ------------------FOOTER FORM------------------- */
-.footer-submit {
-  display: flex;
-  align-items: center;
-  text-align: center;
 
+.footer-form-name {
+  margin: 0px;
+  margin-bottom: 20px;
+  width: 219px;
+  height: 16px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--third-text-color);
+}
+
+.footer-subscription {
+  display: inline-flex;
+  position: relative;
+}
+
+.form-field {
+  display: flex;
+  position: absolute;
+}
+
+.footer-submit {
   padding: 10px 28px;
   width: 200px;
+  margin-left: 12px;
   height: 50px;
   font-weight: 700;
   font-size: 16px;
@@ -752,6 +776,35 @@ img {
 .modal-close-btn:hover .modal-icon-close,
 .modal-close-btn:focus .modal-icon-close {
   fill: var(--third-text-color);
+}
+
+.modal-name {
+  width: 448px;
+  height: 23px;
+  margin: 40px 40px 12px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+}
+
+.form {
+  margin: 12px 40px 165px;
+  width: 448px;
+}
+
+.form-pitch {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+textarea {
+  resize: none;
 }
 /* ------------------PORTFOLIO------------------- */
 
