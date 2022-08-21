@@ -221,6 +221,7 @@ img {
   text-align: center;
   letter-spacing: 0.06em;
   border-radius: 4px;
+  border: none;
   color: var(--hero-text-color);
   background-color: var(--accent-color);
 
@@ -674,23 +675,40 @@ img {
 }
 
 .footer-subscription {
-  display: inline-flex;
-  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
-.form-field {
+.footer-online-form {
   display: flex;
-  position: absolute;
+}
+
+.footer-mail-input {
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+
+  font-size: 16px;
+  line-height: 1.25;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
 }
 
 .footer-submit {
+  display: flex;
+  align-items: center;
+
   padding: 10px 28px;
-  width: 200px;
-  margin-left: 12px;
-  height: 50px;
+  min-width: 200px;
+  min-height: 50px;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.8;
+  line-height: 1.88;
   letter-spacing: 0.06em;
   color: var(--third-text-color);
   background-color: var(--accent-color);
@@ -700,7 +718,7 @@ img {
 }
 
 .footer-icon-send {
-  text-align: right;
+  margin-left: 10px;
 }
 
 /* ------------------MODAL------------------- */
@@ -851,6 +869,7 @@ textarea {
 .modal-text {
   width: 100%;
   height: 120px;
+  padding: 12px 16px;
 
   font-size: 12px;
   line-height: 1.16;
@@ -873,10 +892,9 @@ textarea {
 .check-text {
   display: flex;
 
-font-size: 14px;
-line-height: 1.71;
-letter-spacing: 0.03em;
-color: #757575;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  color: #757575;
 }
 
 .check-text::before {
@@ -903,6 +921,29 @@ color: #757575;
 
 .modal-check:focus + .check-text::before {
   background-color: var(--accent-color);
+}
+
+.send-btn {
+  display: block;
+
+  width: 200px;
+  height: 50px;
+  border: none;
+  margin: auto;
+
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  color: var(--third-text-color);
+  background-color: var(--second-accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.send-btn:hover,
+.send-btntn:focus {
+  background-color: var(--second-accent-color);
 }
 
 /* ------------------PORTFOLIO------------------- */
